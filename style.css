@@ -1,41 +1,50 @@
 body, html {
     height: 100%;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: Arial, sans-serif;
+    text-align: center; /* Центрирует текст внутри блоков */
     background-size: cover; /* Покрытие всего экрана фоном */
-    background-position: center; /* Центрирование фонового изображения */
+    background-position: center; /* Центрирует фоновое изображение */
 }
 
 #questionnaire {
-    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white; /* Для лучшей видимости текста на темном фоне */
+    flex-direction: column; /* Элементы внутри контейнера выстраиваются вертикально */
+    align-items: center; /* Центрирует элементы по горизонтали */
+    justify-content: center; /* Центрирует контент по вертикали */
 }
 
 #question {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Отступ вопроса от кнопок */
     font-size: 28px;
-    background-color: rgba(0, 0, 0, 0.7); /* Небольшая прозрачность для лучшего чтения */
+    background-color: rgba(253, 251, 251, 0.5); /* Небольшая прозрачность для лучшего чтения */
     padding: 20px;
     border-radius: 10px;
 }
 
 button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 22px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    background-color: #614c66fe;
-    transition: background-color 0.3s;
+    margin: 10px; /* Отступы вокруг кнопок */
+    padding: 10px 20px; /* Внутренние отступы кнопок */
+    font-size: 18px; /* Размер шрифта текста в кнопках */
+    cursor: pointer; /* Изменяет курсор при наведении на кнопку */
+    border: none; /* Убирает стандартную рамку кнопки */
+    border-radius: 5px; /* Скругление углов кнопки */
+    color: #fff; /* Цвет текста кнопок */
+    background-color: #128ed5e9; /* Фоновый цвет кнопок */
+    transition: background-color 0.3s; /* Плавное изменение цвета фона при наведении */
 }
 
 button:hover {
-    background-color: #a2459b;
+    background-color: #0056b3; /* Цвет фона кнопок при наведении */
 }
+
+/* Дополнительный стиль для горизонтального расположения кнопок */
+.buttons-container {
+    display: flex;
+    justify-content: center; /* Центрирует кнопки по горизонтали */
+}
+
+/* Добавьте этот класс к вашему HTML, оборачивая кнопки */

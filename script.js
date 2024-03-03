@@ -4,14 +4,14 @@ let currentQuestionIndex = 0;
 // Массив с вопросами и аудиофайлами
 const questions = [
     { text: "Go to the furthest point of the room and meditate about life.", agreeAudio: "sounds/agree4.mp3", disagreeAudio: "sounds/disagree1.mp3", backgroundImage: "images/background1.jpg" },
-    { text: "Would you like to read someone else’s thoughts?", agreeAudio: "sounds/agree2.mp3", disagreeAudio: "sounds/disagree2.mp3", backgroundImage: "images/background3.jpg" },
-    { text: "Take the microphone and make some beatbox.", agreeAudio: "sounds/agree1.mp3", disagreeAudio: "sounds/disagree3.mp3", backgroundImage: "images/background2.jpg" },
+    { text: "Would you like to read someone else’s thoughts?", agreeAudio: "sounds/agree2.mp3", disagreeAudio: "sounds/disagree2.mp3", backgroundImage: "images/background2.jpg" },
+    { text: "Take the microphone and make some beatbox.", agreeAudio: "sounds/agree1.mp3", disagreeAudio: "sounds/disagree5.mp3", backgroundImage: "images/background3.jpg" },
     { text: "Play some mysterious notes on the piano.", agreeAudio: "sounds/agree3.mp3", disagreeAudio: "sounds/disagree4.mp3", backgroundImage: "images/background4.jpg" },
-    { text: "Ask for 1 min of silence and listen the sounds of the room.", agreeAudio: "sounds/agree4.mp3", disagreeAudio: "sounds/disagree1.mp3", backgroundImage: "images/background5.jpg" },
+    { text: "Ask for 1 min of silence and listen the sounds of the room.", agreeAudio: "sounds/agree4.mp3", disagreeAudio: "sounds/disagree5.mp3", backgroundImage: "images/background5.jpg" },
     { text: "Are you still here?", agreeAudio: "sounds/agree1.mp3", disagreeAudio: "sounds/disagree2.mp3", backgroundImage: "images/background6.jpg" },
-    { text: "Invite another participant to respond to this message and continue.", agreeAudio: "sounds/agree2.mp3", disagreeAudio: "sounds/disagree3.mp3", backgroundImage: "images/background9.jpg" },
-    { text: "Do you like coffee from the Blockhouse?", agreeAudio: "sounds/agree3.mp3", disagreeAudio: "sounds/disagree4.mp3", backgroundImage: "images/background7.jpg" },
-    { text: "Create a little conducting piece: when you raise your hands, everybody shouts. When your hands are down, everybody is quite. You can play with that and create dynamics, new sounds… Enjoy!", agreeAudio: "sounds/agree4.mp3", disagreeAudio: "sounds/disagree1.mp3", backgroundImage: "images/background9.jpg" },
+    { text: "Invite another participant to respond to this message and continue.", agreeAudio: "sounds/agree2.mp3", disagreeAudio: "sounds/disagree.mp3", backgroundImage: "images/background7.jpg" },
+    { text: "Do you like coffee from the Blockhouse?", agreeAudio: "sounds/agree3.mp3", disagreeAudio: "sounds/disagree4.mp3", backgroundImage: "images/background8.jpg" },
+    { text: "Create a little conducting piece: when you raise your hands, everybody shouts. When your hands are down, everybody is quite. You can play with that and create dynamics, new sounds… Enjoy!", agreeAudio: "sounds/agree4.mp3", disagreeAudio: "sounds/disagree.mp3", backgroundImage: "images/background9.jpg" },
     { text: "Did you like it?", agreeAudio: "sounds/agree1.mp3", disagreeAudio: "sounds/disagree1.mp3", backgroundImage: "images/background10.jpg" },
 
     // Добавьте больше вопросов по аналогии
@@ -40,6 +40,7 @@ function changeQuestion() {
         // Скрываем кнопки или делаем их неактивными
         document.getElementById('agree').style.display = 'none';
         document.getElementById('disagree').style.display = 'none';
+        document.body.style.backgroundImage = "url('images/background11.jpg')";
     }
 }
 
